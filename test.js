@@ -23,7 +23,11 @@ new (function() {
                   // Got the data - parse it and return the temperature
                   temperature = weather_data['main']['temp'];
                   callback(temperature);
-              }
+              },
+	      error: function(weather_data){
+		msg = weather_data;
+		callback(msg);
+	      }
         });
     };
 
