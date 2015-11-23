@@ -38,8 +38,7 @@ new (function() {
 				break;
 			
 		  }
-		  if (price == null)
-			 price = 0; 
+
                   callback(price);
               }
         });
