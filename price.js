@@ -36,7 +36,7 @@ new (function() {
 			case 'Last':
 	                	price = json_data['query']['results']['quote']['LastTradePriceOnly'];
 				break;
-
+		  }
                   callback(price);
               }
         });
