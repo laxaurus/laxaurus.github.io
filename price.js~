@@ -1,5 +1,5 @@
 /* Extension demonstrating a blocking reporter block */
-/* Sayamindu Dasgupta <sayamindu@media.mit.edu>, May 2014 */
+/* Larry Chan <larry1chan@gmail.com>, Nov 2015 */
 
 
 new (function() {
@@ -37,27 +37,13 @@ new (function() {
 	                	price = json_data['query']['results']['quote']['LastTradePriceOnly'];
 				break;
 
+			if price == null{ price = 0; }
+		  }
                   callback(price);
               }
         });
 
 
-/*
-        $.ajax({
-              url: 'http://api.openweathermap.org/data/2.5/weather?q='+location+'&units=imperial',
-              dataType: 'jsonp',
-              success: function( weather_data ) {
-                  // Got the data - parse it and return the temperature
-                  temperature = weather_data['main']['temp'];
-                  callback(temperature);
-              },
-	      error: function(weather_data){
-		msg = weather_data;
-		callback(msg);
-	      }
-        });
-*/  
-    };
 
     // Block and block menu descriptions
     var descriptor = {
