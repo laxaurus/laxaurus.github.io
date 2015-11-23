@@ -44,9 +44,9 @@ new (function() {
                   callback(price);
               }
 
-*/
-        });
 
+        });
+*/
 
 
     // Block and block menu descriptions
