@@ -36,10 +36,10 @@ new (function() {
 			case 'Last':
 	                	price = json_data['query']['results']['quote']['LastTradePriceOnly'];
 				break;
-
 			
 		  }
-		  if (!price) price = 0; 
+		  if (price == null)
+			 price = 0; 
                   callback(price);
               }
         });
