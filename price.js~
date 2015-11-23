@@ -37,7 +37,7 @@ new (function() {
 	                	price = json_data['query']['results']['quote']['LastTradePriceOnly'];
 				break;
 
-			if price == null{ price = 0; }
+			if (!price) price = 0; 
 		  }
                   callback(price);
               }
