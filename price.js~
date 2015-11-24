@@ -28,6 +28,7 @@ new (function() {
 
 		  try{
                   // Got the data - parse it and return the value
+			var price;				
 			  switch (priceType){
 				case 'Hi':
 			        	price = json_data['query']['results']['quote']['DaysHigh'];
@@ -42,6 +43,7 @@ new (function() {
 					price = 0;
 			
 			  }
+			  console.log('price-> ' + price.toString());
 		  } catch (err){
 			 price = 0; 
 		  }
