@@ -16,7 +16,7 @@ new (function() {
 
     ext.get_px = function(priceType, symbol, callback) {
         // Make an AJAX call to the Open Weather Maps API
-	//callback('hello');
+	callback('hello');
 	var u;
 	u = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quote%20where%20symbol%20%3D%20' + symbol + '&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
 	console.log('url-> ' + u);
@@ -47,7 +47,7 @@ new (function() {
 		  } catch (err){
 			 price = 0; 
 		  }
-                  callback(price);
+        //          callback(price);
               }
 
 
