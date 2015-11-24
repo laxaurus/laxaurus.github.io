@@ -60,7 +60,7 @@ new (function() {
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-            ['r', 'current %m.priceType price of %s', 'get_px', 'Last', '^HSI']
+            ['R', 'current %m.priceType price of %s', 'get_px', 'Last', '^HSI']
         ],
 
 	menus: {
