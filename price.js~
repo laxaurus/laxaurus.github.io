@@ -48,7 +48,7 @@ new (function() {
 		  } catch (err){
 			 price = 0; 
 		  }
-        //          callback(price);
+                  callback(price);
               }
 
 
